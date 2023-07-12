@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olypedia</title>
+     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Caprasimo&family=Dancing+Script:wght@700&family=Fasthand&family=Inter:wght@200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- stylesheets -->
+       <link rel="stylesheet" href="styles.css">
+
+   
+
+    <!-- scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+</head>
+<body class="box-border font-Montserrat font-[400] bg-gray-100 " style="font-family:'Inter', sans-serif;">
+    <img class="absolute pointer-events-none" src="./assets/Ellipse 23.svg" alt="">
+    <header class=" px-20 py-8 max-sm:px-5 max-sm:py-4">
+        <nav class="w-full mx-0 my-auto  flex items-center justify-between ">
+            <div class="cursor-pointer pt-2 pr-1 left-10 hidden max-[990px]:block max-sm:pr-0"> <button id="dropDownbtn" onclick="Open()" class="fa-solid fa-bars text-blue-600 toggle-btn text-3xl max-sm:text-xl "></button>
+            </div>
+            <div class="max-md:mr-40 max-[990px]:mr-72 max-[490px]:mr-16 max-[340px]:mr-12"> <img src="./assets/image 1.png" alt="Logo"
+                    width="150rem">
+
+            </div>
+
+            
+
+            <ul
+                class=" flex gap-x-16 font-[700] text-xs shrink-[10] text-gray-600 max-[990px]:hidden ">
+                <li class="list-none hover:text-gray-800 hover:font-bold hover:text-sm active:text-gray-900"> <a class="no-underline"
+                        href="#hero">Home </a></li>
+                <li class="list-none  hover:text-gray-800 hover:font-bold hover:text-sm active:text-gray-900"> <a class="no-underline"
+                        href="#Today">Events</a></li>
+
+                <li class="list-none  hover:text-gray-800 hover:font-bold hover:text-sm active:text-gray-900"> <a class="no-underline"
+                        href="#Highlights">Highlights</a></li>
+                <li class="list-none  hover:text-gray-800 hover:font-bold hover:text-sm active:text-gray-900">
+                    <a href="#PreOlym"> PastOlympics</a>
+                </li>
+
+                <li class="list-none  "> <a class=" hover:text-gray-800 hover:font-bold hover:text-sm active:text-gray-900"
+                        href="#Athletes">Athletes</a></li>
+            </ul>
+            
+            <button
+                class="bg-[#5D50C6] text-gray-100  px-4 py-2 text-sm font-semibold outline-none rounded-3xl cursor-pointer active:scale-[0.95] hover:scale-[1.05] hover:text-[#5D50C6] hover:bg-gray-50 hover:border-[#5D50C6] hover:border-[1px] min-w-[8rem] max-sm:min-w-[7rem] max-[440px]:relative max-[440px]:right-4 max-[391px]:px-0  Tickets"><a
+                    href="#Tickets">Book Tickets</a></button>
+           
+        </nav>
+     
+
+        <div class="relative dropDownMenu   mt-2 hidden z-[1] ">
+            <ul
+                class=" flex flex-col py-2 bg-[#FCE3DC] min-[990px]:hidden  transition-height duration-200 ease-cubic-bezier justify-center items-center gap-y-2 font-[500] text-sm  text-gray-600 bg-gradient-to-r from-[#FCE3DC] to-[#fff] w-[20rem] rounded-lg backdrop-blur-lg     ">
+                <li class="list-none hover:text-purple-800 hover:font-bold hover:text-xl "> <a
+                        class="no-underline" href="#hero">Home </a></li>
+                <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl"> <a class="no-underline"
+                        href="#Today">Events</a></li>
+
+                <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl"> <a class="no-underline"
+                        href="#Highlights">Highlights</a></li>
+                <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl">
+                    <a href="#PreOlym"> PastOlympics</a>
+                </li>
+
+                <li class="list-none  "> <a class=" hover:text-purple-800 hover:font-bold hover:text-xl"
+                        href="#Athletes">Athletes</a></li>
+
+                <button
+                    class="bg-[#5D50C6] text-gray-100 shrink-[11] px-2 py-1 text-lg font-semibold outline-none rounded-3xl cursor-pointer active:scale-[0.95] hover:scale-[1.05] hover:text-[#5D50C6] hover:bg-gray-50 hover:border-[#5D50C6] hover:border-[1px] w-[80%]"><a
+                        href="#Tickets">Book Tickets</a></button>
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="mt-5">
+
+        <div class="flex px-20 py-2 max-[640px]:flex-col max-[640px]:px-5  max-[640px]:max-h-[680px] max-[640px]:flex-col-reverse" style="font-family:'Inter', sans-serif;">
+          
+               <div class="basis-1/3 mt-20  max-[640px]:mt-5">
+                <h2 class="text-[2rem] font-semibold" style="background: linear-gradient(to right, rgba(229, 20, 20, 1), rgba(99, 72, 207, 1), rgba(237, 242, 0, 1), rgba(23, 154, 19, 1));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">Paris 2024</h2>
+                <p class="text-[1rem] text-[#6595A4] font-medium mr-20 max-[640px]:mr-5">“Unite, Excel, Inspire: PARIS 2024, Embracing the Spirit of Triumph”</p>
+
+                <button class=" px-4 py-1 border-[1px] rounded-3xl text-[0.8rem] font-bold text-white mt-16  max-[640px]:mt-8" style="background: linear-gradient(90deg, hsla(247, 51%, 55%, 1) 0%, hsla(351, 45%, 45%, 1) 100%);">Explore more</button>
+
+               </div>
+
+               <div class="basis-2/3">
+               <img src="./assets/Frame 9266.png" alt="">
+
+
+               </div>
+
+
+
+
+
+
+        </div>
+       
+        <div style="background: linear-gradient(203deg, #93568D 34.36%, #f69e9e);" class=" max-w-fit flex  mx-20 my-8 rounded-[0.9375rem] max-[975px]:flex-col  max-[475px]:mx-10 max-[331px]:mx-5">
+               <div class="basis-1/2" >
+                  <img class="flex-1 max-[975px]:w-[400rem]" src="./assets/image 4.png" alt="Hospitality image" width="500rem">
+               </div>
+
+               <div class="basis-1/2 bg-cover max-[975px]:400rem " style="font-family:'Inter', sans-serif;">
+                      <h4 class="mt-12 text-3xl text-white ml-8 leading-10 font-bold max-md:text-xl max-[331px]:text-lg">PARIS 2024 HOSPITALITY</h4>
+                      <p class="text-[#FFEDEDF2] ml-8 mr-[4rem] font-normal leading-5 tracking-[0.08125rem]  max-md:text-xs max-[445px]:text-[0.6rem]"> Experience Paris 2024 through the Official Olympic Ticketing and Hospitality programmes</p>
+                      <button style="background: linear-gradient(52deg, #5D50C6 14.61%, rgba(247, 15, 113, 0.00) 79.22%);" class="ml-8 mt-12 border-[0.2rem] border-[#fff] rounded-3xl px-5 py-2 mb-4 text-white font-normal text-sm "> Click to learn more </button>         
+               </div>
+        </div>
+
+        <div style="background: linear-gradient(203deg, #93568D 34.36%, #f69e9e);" class=" max-w-fit min-lg:max-h-[18rem]  flex flex-row-reverse mx-20 my-16 rounded-[0.9375rem] max-[975px]:flex-col  max-[475px]:mx-10 max-[331px]:mx-5">
+            <div class="basis-1/2 flex" >
+               <img class="flex-1 " src="./assets/merchandise.png" alt="merchandise image" width="500rem">
+            </div>
+
+            <div class="basis-1/2  max-[975px]:400rem " style="font-family:'Inter', sans-serif;">
+                   <h4 class="mt-12 text-3xl text-white ml-8 leading-10 font-bold max-md:text-xl max-[331px]:text-lg ">Shop New Olympic Collection</h4>
+                   <p class="text-[#FFEDEDF2] ml-8 mr-[4rem] font-normal leading-5 tracking-[0.08125rem]  max-md:text-xs max-[445px]:text-[0.6rem]">Our new Collection is emblazoned with inspirational quotes and designs of the founder of the modern Olympic Games Pierre de Coubertin.</p>
+                   <button style="background: linear-gradient(52deg, #5D50C6 14.61%, rgba(247, 15, 113, 0.00) 79.22%);" class="ml-8 mt-4 border-[0.2rem] border-[#fff] rounded-3xl px-5 py-2 mb-4 text-white font-normal text-sm "> Shop now </button>         
+            </div>
+     </div>
+
+
+
+    </main>
+
+    
+    <script>
+        const toggleBtn = document.querySelector("#dropDownbtn")
+        const toggleIcon = document.querySelector("#dropDownbtn")
+        const dropDownMenu = document.querySelector(".dropDownMenu")
+
+       function Open () {
+    // Toggle the 'hidden' class on the dropdown menu
+    dropDownMenu.classList.toggle('hidden')
+
+    const isOpen = dropDownMenu.classList.contains('hidden') 
+     toggleIcon.classList = isOpen? 'fa-solid fa-bars  text-[#5D50C6] toggle-btn text-3xl ': 'fa-solid fa-xmark text-[#5D50C6] toggle-btn text-3xl'
+    
+  };
+
+  document.addEventListener('click', (event) => {
+    const targetElement = event.target;
+    if (!toggleBtn.contains(targetElement) && !dropDownMenu.contains(targetElement)) {
+      // If the clicked element is outside the dropdown, hide it
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+
+
+      
+    </script>
+    
+</body>
+</html>
