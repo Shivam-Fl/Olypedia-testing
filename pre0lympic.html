@@ -121,7 +121,7 @@
 
     <main>
 
-        <div class="h-[100vh]">
+        <div class="h-[100vh] lg:mb-20">
             <div class="flex justify-center content-center "><img src="./assets/Frame 9255.png" alt="" width="600rem">
             </div>
             <div class="flex justify-center content-center ">
@@ -135,7 +135,7 @@
                             <button
                                 class=" mt-5 mx-4 justify-end text-lg bg-gray-300 px-4 py-2 w-[85%] rounded-xl hover:border-[1px] hover:bg-white hover:text-blue-900 hover:border-gray-300 hover:text-xl">
                                
-                               <a class=" flex" href="#london2012">  <h6 class="basis-1/2 text-blue-700">Explore </h6>
+                               <a class=" flex" href="london2012.html">  <h6 class="basis-1/2 text-blue-700">Explore </h6>
                                  <i class="fa-solid fa-arrow-right basis-1/2 self-end mb-1 text-blue-700"></i> </a>
                             </button>
                         </div>
@@ -149,7 +149,7 @@
                             <button
                                 class=" mt-4 mx-4 justify-end text-lg bg-gray-300 px-4 py-2 w-[85%] rounded-xl  hover:border-[1px] hover:bg-white hover:text-blue-900 hover:border-gray-300 hover:text-xl">
                                
-                                <a class="flex" href="#Rio2016">  <h6 class="basis-1/2 text-blue-700">Explore </h6>
+                                <a class="flex" href="rio2016.html">  <h6 class="basis-1/2 text-blue-700">Explore </h6>
                                     <i class="fa-solid fa-arrow-right  basis-1/2 self-end mb-1 text-blue-700"></i></a>
                             </button>
                         </div>
@@ -163,7 +163,7 @@
                             <button
                                 class=" mt-7 mx-4 justify-end text-lg bg-gray-300 px-4 py-2 w-[85%] rounded-xl hover:border-[1px] hover:bg-white hover:text-blue-900 hover:border-gray-300 hover:text-xl">
                                
-                              <a  class="flex" href="#tokyo2012">  <h6 class="basis-1/2 text-blue-700">Explore </h6><i class="fa-solid fa-arrow-right basis-1/2 self-end mb-1 text-blue-700"></i> </a>  
+                              <a  class="flex" href="tokyo2020.html">  <h6 class="basis-1/2 text-blue-700">Explore </h6><i class="fa-solid fa-arrow-right basis-1/2 self-end mb-1 text-blue-700"></i> </a>  
                             </button>
                         </div>
                     </div>
@@ -204,31 +204,7 @@
 
 
 
-    <script>
-        const toggleBtn = document.querySelector("#dropDownbtn")
-        const toggleIcon = document.querySelector("#dropDownbtn")
-        const dropDownMenu = document.querySelector(".dropDownMenu")
-
-        function Open() {
-            // Toggle the 'hidden' class on the dropdown menu
-            dropDownMenu.classList.toggle('hidden')
-
-            const isOpen = dropDownMenu.classList.contains('hidden')
-            toggleIcon.classList = isOpen ? 'fa-solid fa-bars  text-[#5D50C6] toggle-btn text-3xl max-sm:text-2xl ' : 'fa-solid fa-xmark text-[#5D50C6] toggle-btn text-3xl max-sm:text-2xl'
-
-        };
-
-        document.addEventListener('click', (event) => {
-            const targetElement = event.target;
-            if (!toggleBtn.contains(targetElement) && !dropDownMenu.contains(targetElement)) {
-                // If the clicked element is outside the dropdown, hide it
-                dropdownMenu.classList.add('hidden');
-            }
-        });
-
-
-
-    </script>
+    <script src="toogle.js"> </script>
 
 
 
